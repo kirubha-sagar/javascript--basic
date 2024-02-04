@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            text-decoration:none;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+
+    <h1>TO-DO-APP</h1>
+    <input id="enter">
+    <button onclick="update()">Add</button>
+    <ul id="list">
+        <li>
+            kirubha <button onclick="deleteelement(event)">DELETE</button>
+        </li>
+    </ul>
+    </center>
+    <script>
+        var ul=document.getElementById("list")
+        var input=document.getElementById("enter")
+
+        function update(){
+            var li=document.createElement("li")
+             li.innerHTML=input.value  +"<button onclick='deleteelement(event)'>DELETE</button>"
+            ul.append(li)
+        }
+        function deleteelement(event){
+            event.target.parentElement.remove()
+
+        }
+    </script>
+</body>
+</html>

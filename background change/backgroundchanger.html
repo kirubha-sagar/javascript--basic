@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin:50px;
+            padding:20px;
+            border:30px;
+        } */
+        #color{
+            background-color: black;
+            height:5cm;
+            width:5cm;
+        }
+        .abc{
+            width:900cm;
+            height:10px
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="color"></div>
+    <button onclick="change()">click</button>
+
+    <script>
+        var color = document.getElementById("color");
+
+        function change() {
+             color.style.backgroundColor="red";
+            // color.setAttribute("class", "abc");
+        }
+    </script>
+</body>
+</html>
